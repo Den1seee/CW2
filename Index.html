@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Include FontAwesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Flexbox styling for images */
+        .additional-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Space between images */
+            margin-top: 20px;
+        }
+
+        .additional-images img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
@@ -41,13 +56,21 @@
             <!-- Blog Post 1: Exploring Light and Shadow in Photography -->
             <div class="blog-post" data-post-id="1">
                 <h3 class="post-title">Exploring Light and Shadow in Photography</h3>
-                <img src="image1.jpg" alt="Photo 1" class="post-image">
-                <p class="preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, magna in tempor dictum...</p>
+                
+                <!-- Additional images for Post 1 (3 images in total) -->
+                <div class="additional-images">
+                    <img src="https://photoeducation.weebly.com/uploads/1/7/1/2/17123938/p220_1.png" alt="Light and shadow composition">
+                    <img src="https://photoeducation.weebly.com/uploads/1/7/1/2/17123938/p219.png" alt="Shadow play in photography">
+                    <img src="https://photoeducation.weebly.com/uploads/1/7/1/2/17123938/p226.png" alt="Dramatic lighting in nature">
+                </div>
+                
+                <p class="preview">Discover how light and shadow can transform photography into an art form...</p>
                 <button class="toggle-btn">Read More</button>
                 <div class="full-view">
                     <p class="full-content">Full post content goes here. This is where you provide detailed information...</p>
                     <span class="post-time">Posted on: <span class="timestamp">April 1, 2025</span></span>
                     <div class="post-actions">
+
                         <!-- Like and Bookmark icons -->
                         <div class="icon-btns">
                             <button class="like-btn">
@@ -64,13 +87,21 @@
             <!-- Blog Post 2: Portrait Photography -->
             <div class="blog-post" data-post-id="2">
                 <h3 class="post-title">Portrait Photography</h3>
-                <img src="image2.jpg" alt="Portrait Photography" class="post-image">
-                <p class="preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, magna in tempor dictum...</p>
+                
+                <!-- Additional images for Post 2 (3 images in total) -->
+                <div class="additional-images">
+                    <img src="https://i.pinimg.com/736x/17/80/56/1780563b8baaf0b777cc45ea1f3a686d.jpg" alt="Portrait composition">
+                    <img src="https://i.pinimg.com/736x/37/09/ca/3709caec0f4d2007659037e0a0db45f6.jpg" alt="Person in natural light">
+                    <img src="https://i.pinimg.com/736x/8c/2e/ef/8c2eef567d54d7be3af2f5216bafae0a.jpg" alt="Close-up portrait">
+                </div>
+
+                <p class="preview">Learn how to capture the essence of a person through portrait photography...</p>
                 <button class="toggle-btn">Read More</button>
                 <div class="full-view">
                     <p class="full-content">Full post content goes here. This is where you provide detailed information...</p>
                     <span class="post-time">Posted on: <span class="timestamp">April 1, 2025</span></span>
                     <div class="post-actions">
+
                         <!-- Like and Bookmark icons -->
                         <div class="icon-btns">
                             <button class="like-btn">
