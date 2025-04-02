@@ -1,0 +1,167 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Body text uses Open Sans */
+    background-color: #F8F8F8; /* Light background */
+    color: #333333; /* Primary text color */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Container to center content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif; /* Heading uses Playfair Display */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 0;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #3498db; /* Underline on hover */
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 150px 0;
+    height: 600px;
+    background-color: #F8F8F8; /* Light background */
+}
+
+#hero h2 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif; /* Heading uses Playfair Display */
+}
+
+#hero p {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #555;
+}
+
+/* Blog Section */
+#blog {
+    padding: 60px 0;
+    background-color: #F9F9F9; /* Light gray background */
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif; /* Heading uses Playfair Display */
+}
+
+.blog-post {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.blog-post h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Playfair Display', serif; /* Heading uses Playfair Display */
+}
+
+.blog-post p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+    font-family: 'Open Sans', sans-serif; /* Body text uses Open Sans */
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+}
+
+.blog-post a:hover {
+    color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Minor Adjustments for Cleanliness and Readability */
+h2, h3 {
+    font-family: 'Playfair Display', serif; /* Serif font for headings */
+}
+
+p {
+    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font for body text */
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
