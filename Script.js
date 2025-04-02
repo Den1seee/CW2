@@ -1,23 +1,24 @@
-{{javascript}}
-document.querySelectorAll('.toggle-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const post = this.closest('.blog-post');
-        const fullView = post.querySelector('.full-view');
-        fullView.classList.toggle('active'); // Toggle visibility of the full content
-        this.textContent = fullView.classList.contains('active') ? 'Read Less' : 'Read More';
+document.addEventListener("DOMContentLoaded", function () {
+    // Toggle full blog post visibility
+    document.querySelectorAll(".toggle-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            let fullView = this.nextElementSibling;
+            fullView.style.display = fullView.style.display === "block" ? "none" : "block";
+            this.textContent = fullView.style.display === "block" ? "Read Less" : "Read More";
+        });
+    });
+
+    // Like button click event
+    document.querySelectorAll(".like-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("liked");
+        });
+    });
+
+    // Bookmark button click event
+    document.querySelectorAll(".bookmark-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("bookmarked");
+        });
     });
 });
-
-document.querySelectorAll('.like-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const post = this.closest('.blog-post');
-        const postId = post.getAttribute('data-post-id');
-        const isLiked = localStorage.getItem(`like-${postId}`);
-
-        if (isLiked) {
-            localStorage.removeItem(`like-${postId}`);
-            this.classList.remove('liked');
-        } else {
-            localStorage.setItem(`like-${postId}`, 'true');
-            this.classList.add('liked');
-        }
