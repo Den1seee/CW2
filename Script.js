@@ -1,3 +1,5 @@
+// script.js
+
 document.addEventListener("DOMContentLoaded", function () {
     // Toggle full blog post visibility
     document.querySelectorAll(".toggle-btn").forEach(button => {
